@@ -24,6 +24,9 @@ const strangeArray = [
   "JavaScript",
 ];
 
+const newArray = strangeArray.filter((strange) => typeof(strange) == "string");
+newArray.sort();
+
 // Función que recibe por parámetro un array y muestra sus elementos en pantalla
 function showList(array) {
   const container = document.getElementById("list");
@@ -39,4 +42,5 @@ function showList(array) {
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
+  showList(newArray);
 });
